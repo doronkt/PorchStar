@@ -3,7 +3,7 @@ from flask import Flask, render_template, Response, request, redirect, url_for
 from scheduler.schedule import Schedule
 
 app = Flask(__name__)
-sc = Schedule('111')
+sc = Schedule()
 
 @app.route('/')
 def show_main():
